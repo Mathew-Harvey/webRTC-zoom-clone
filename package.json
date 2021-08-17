@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
-    "devStart": "nodemon server.js"
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start":"PROD=true node server.js",
+    "postinstall": "npm"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/Mathew-Harvey/webRTC-zoom-clone#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "socket.io": "^4.1.3",
